@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TodoInput from './TodoInput';
-import TodoList from './TodoList';
+import TodoInput from '../TodoInput/TodoInput';
+import TodoList from '../TodoList/TodoList';
 
 class App extends React.Component {
     constructor() {
