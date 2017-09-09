@@ -1,6 +1,5 @@
 var config = {
-    context: __dirname + "/components",
-    entry: "./app.js",
+    entry: "./index.js",
 
     output: {
         filename: "bundle.js",
