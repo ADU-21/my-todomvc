@@ -20,6 +20,7 @@ class App extends React.Component {
         return(
             <div className="TODOS">
                 <h1>todos</h1>
+                <p>total: {this.state.todos.length}</p>
                 <TodoInput addTodo={this.addTodo.bind(this)} />
                 <TodoList todos={this.state.todos} />
             </div>
