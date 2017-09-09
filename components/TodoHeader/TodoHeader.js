@@ -1,6 +1,7 @@
 import React from 'react';
+import '../../styles/main.styl';
 
-class TodoInput extends React.Component {
+class TodoHeader extends React.Component {
     handlerKeyUp(e) {
         if(e.keyCode == 13) {
             let value = e.target.value;
@@ -17,10 +18,11 @@ class TodoInput extends React.Component {
     render () {
         return (
             <div className="todo-input">
+            <h1 className="todo-title">test</h1>
             <input onKeyUp={this.handlerKeyUp.bind(this)} type="text" placeholder="what need to do?"/>
             </div>
         )
     }
 }
 
-export default TodoInput;
+export default TodoHeader;

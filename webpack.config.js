@@ -16,7 +16,8 @@ var config = {
                 }
             },
             { test: /\.css$/, loader: "style-loader!css-loader"},
-            { test: /\.styl$/, loader: "style-loader!css-loader!stylus-loader"},//支持stylus
+            { test: /\.styl$/, loader: "style-loader!css-loader!stylus-loader"},
+            {test: /\.less$/, loader: "less-loader"},
             { test: /\.(png|jpg)$/, loader: 'url?limit=8192'}
         ],
     }
