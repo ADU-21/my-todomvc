@@ -18,7 +18,7 @@ class App extends React.Component {
 
     render() {
         return(
-            <div className="TODOS">
+            <div className="todo-wrapper">
                 <h1>todos</h1>
                 <p>total: {this.state.todos.length}</p>
                 <TodoInput addTodo={this.addTodo.bind(this)} />

@@ -14,7 +14,8 @@ var config = {
                 query: {
                     presets: ['react', 'es2015']
                 }
-            }
+            },
+            { test: /\.styl$/, loader: "style-loader!css-loader!stylus-loader"},//支持stylus
         ],
     }
 };
