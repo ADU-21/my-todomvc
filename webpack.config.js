@@ -15,7 +15,9 @@ var config = {
                     presets: ['react', 'es2015']
                 }
             },
+            { test: /\.css$/, loader: "style-loader!css-loader"},
             { test: /\.styl$/, loader: "style-loader!css-loader!stylus-loader"},//支持stylus
+            { test: /\.(png|jpg)$/, loader: 'url?limit=8192'}
         ],
     }
 };
